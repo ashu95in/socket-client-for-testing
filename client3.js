@@ -15,6 +15,9 @@ socket.on('bookreq:rece',(data)=>{
    console.log(data);
 })
   
+socket.on('globalMsg:rece',(data)=>{
+  console.log(data)
+})
 
 socket.emit("private-message",{touserId:'kirti',message:'baby hain baby'});
 
